@@ -1,10 +1,10 @@
-CREATE TABLE BookDescibed (
+CREATE TABLE BookDescribed (
     ISBN VARCHAR(20) PRIMARY KEY,
     Title VARCHAR(100),
     Author VARCHAR(100),
     Published INT,
     Genre VARCHAR(50),
-    Description VARCHAR(255)
+    Description VARCHAR(1000)
 );
 
 CREATE TABLE Account (
