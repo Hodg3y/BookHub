@@ -20,7 +20,7 @@ CREATE TABLE Inventory (
     BookID INT PRIMARY KEY,
     ISBN VARCHAR(20),
     Status VARCHAR(50),
-    FOREIGN KEY (ISBN) REFERENCES BookDescibed(ISBN)
+    FOREIGN KEY (ISBN) REFERENCES BookDescribed(ISBN)
 );
 
 CREATE TABLE Booking (
