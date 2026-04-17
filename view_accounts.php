@@ -42,13 +42,7 @@ include 'header.php';
                 </thead>
                 <tbody>
                     <?php
-                    /* Placeholder for PHP Database Logic:
-                    1. Connect to your database using mysqli or PDO.
-                    2. Fetch users based on the search/filter parameters.
-                    3. Loop through the results to populate the table rows.
-                    */
                     
-                    // Example static row for visualization
                     ?>
                     <tr style="border-bottom: 1px solid #eee;">
                         <td style="padding: 12px;">1001</td>
