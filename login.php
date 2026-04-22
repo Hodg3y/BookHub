@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BookHub Login</title>
+    <title>BookHub Login</title>
+
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
+
+<div class="container">
 
 <h1>BOOKHUB</h1>
 
@@ -39,5 +43,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+</div>
+
+</body>
+</html>
 </body>
 </html>
