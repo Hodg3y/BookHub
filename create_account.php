@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BookHub Create Account</title>
+    <title>BookHub Create Account</title>
+    <link rel="stylesheet" href="create_account.css">
 </head>
-
 <body>
+
+<div class="container">
 
 <h1>BOOKHUB</h1>
 
@@ -14,28 +16,25 @@
 <h2>Create Account</h2>
 
 <form method="post">
+    <p>First Name:</p>
+    <input type="text" name="firstname">
 
-<p>First Name:</p>
-<input type="text" name="firstname">
+    <p>Last Name:</p>
+    <input type="text" name="lastname">
 
-<p>Last Name:</p>
-<input type="text" name="lastname">
+    <p>Email:</p>
+    <input type="email" name="email">
 
-<p>Email:</p>
-<input type="email" name="email">
+    <p>Password:</p>
+    <input type="password" name="password">
 
-<p>Password:</p>
-<input type="password" name="password">
+    <br><br>
 
-<br><br>
-
-<button type="submit">Submit</button>
-
+    <button type="submit">Submit</button>
 </form>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     $firstname = $_POST["firstname"];
     $lastname = $_POST["lastname"];
     $email = $_POST["email"];
@@ -48,5 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+</div>
+
+</body>
+</html>
 </body>
 </html>
