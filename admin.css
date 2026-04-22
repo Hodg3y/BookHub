@@ -1,0 +1,42 @@
+body {
+  font-family: Arial;
+  background-color: #f5f5f5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* container */
+.container {
+  width: 500px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* cards */
+.card {
+  text-decoration: none;
+  background: white;
+  border: 2px solid #333;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+}
+
+/* icons */
+.card i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
