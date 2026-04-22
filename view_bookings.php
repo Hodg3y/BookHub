@@ -2,34 +2,39 @@
 <html>
 <head>
     <title>View Bookings</title>
+    <link rel="stylesheet" href="view_bookings.css">
 </head>
 <body>
 
-    <h1>Your Bookings</h1>
+<div class="container">
 
-    <p>These are your current bookings:</p>
+<h1>Your Bookings</h1>
 
-    <?php
-    echo "<div>";
-    echo "<h3>Booking 1</h3>";
-    echo "<p>Booking ID: 1001</p>";
-    echo "<p>Book: The Great Gatsby</p>";
-    echo "<p>Time Out: 10/03/2026</p>";
-    echo "<p>Due Date: 24/03/2026</p>";
-    echo "<p>Returned: No</p>";
-    echo "</div>";
+<p>These are your current bookings:</p>
 
-    echo "<br>";
+<div class="booking">
+    <h3>Booking 1</h3>
+    <p>Booking ID: 1001</p>
+    <p>Book: The Great Gatsby</p>
+    <p>Time Out: 10/03/2026</p>
+    <p>Due Date: 24/03/2026</p>
+    <p>Returned: No</p>
+</div>
 
-    echo "<div>";
-    echo "<h3>Booking 2</h3>";
-    echo "<p>Booking ID: 1002</p>";
-    echo "<p>Book: 1984</p>";
-    echo "<p>Time Out: 01/03/2026</p>";
-    echo "<p>Due Date: 15/03/2026</p>";
-    echo "<p>Returned: Yes</p>";
-    echo "</div>";
-    ?>
+<br>
 
+<div class="booking">
+    <h3>Booking 2</h3>
+    <p>Booking ID: 1002</p>
+    <p>Book: 1984</p>
+    <p>Time Out: 01/03/2026</p>
+    <p>Due Date: 15/03/2026</p>
+    <p>Returned: Yes</p>
+</div>
+
+</div>
+
+</body>
+</html>
 </body>
 </html>
