@@ -2,44 +2,50 @@
 <html>
 <head>
     <title>Edit Account</title>
+    <link rel="stylesheet" href="edit_account.css">
 </head>
 <body>
 
-    <h1>Edit Account</h1>
+<div class="container">
 
-    <p>Change your account details below:</p>
+<h1>Edit Account</h1>
 
-    <form method="post">
-        <label>Username:</label><br>
-        <input type="text" name="username"><br><br>
+<p>Change your account details below:</p>
 
-        <label>Password:</label><br>
-        <input type="password" name="password"><br><br>
+<form method="post">
+    <p>Username:</p>
+    <input type="text" name="username">
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+    <p>Password:</p>
+    <input type="password" name="password">
 
-        <label>Age:</label><br>
-        <input type="number" name="age"><br><br>
+    <p>Email:</p>
+    <input type="email" name="email">
 
-        <button type="submit">Save Changes</button>
-    </form>
+    <p>Age:</p>
+    <input type="number" name="age">
 
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    <button type="submit">Save Changes</button>
+</form>
 
-        $username = $_POST["username"];
-        $password = $_POST["password"];
-        $email = $_POST["email"];
-        $age = $_POST["age"];
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $email = $_POST["email"];
+    $age = $_POST["age"];
 
-        echo "<h3>Updated Details:</h3>";
-        echo "Username: " . $username . "<br>";
-        echo "Password: " . $password . "<br>";
-        echo "Email: " . $email . "<br>";
-        echo "Age: " . $age;
-    }
-    ?>
+    echo "<h3>Updated Details:</h3>";
+    echo "Username: " . $username . "<br>";
+    echo "Password: " . $password . "<br>";
+    echo "Email: " . $email . "<br>";
+    echo "Age: " . $age;
+}
+?>
 
+</div>
+
+</body>
+</html>
 </body>
 </html>
